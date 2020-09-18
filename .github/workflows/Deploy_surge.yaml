@@ -32,5 +32,5 @@ jobs:
         run: npm install - g surge
         
       # The below commands will install Surge
-      - name: Run  Surge
-        run: surge ./ piaicbootcamp2021.surge.sh --token ${{secrets.TOKEN_SURGE}}
+      - name: Run Surge
+        run: surge ./Bootcamp2020 bootcamp2022.surge.sh --token ${{secrets.TOKEN_SURGE}}
