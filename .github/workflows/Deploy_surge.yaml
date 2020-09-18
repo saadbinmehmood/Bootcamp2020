@@ -33,4 +33,4 @@ jobs:
         
       # The below commands will install Surge
       - name: Run Surge
-        run: surge ./ piaicbootcamp2021.surge.sh --token ${{secrets.TOKEN_SURGE}}
+        run: surge https://github.com/saadbinmehmood/Bootcamp2020 piaicbootcamp2021.surge.sh --token ${{secrets.TOKEN_SURGE}}
