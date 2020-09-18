@@ -25,7 +25,7 @@ jobs:
       - name: Install NodeJS
         uses: actions/setup-node@v2-beta
         with: 
-          node-versions: 12
+          node-version: 12
 
       # The below commands will install Surge
       - name: Install Surge
