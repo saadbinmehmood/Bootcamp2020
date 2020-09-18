@@ -20,17 +20,11 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
-
-      # The below commands will install Node JS 
-      - name: Install NodeJS
-        uses: actions/setup-node@v2-beta
-        with: 
-          node-version: 12
-
-      # The below commands will install Surge
-      - name: Install Surge
-        run: npm install - g surge
-        
-      # The below commands will install Surge
-      - name: Run Surge
-        run: surge ./ piaicbootcamp2021.surge.sh --token ${{ secrets.TOKEN_SURGE }}
+    - name: Install NodeJS
+      uses: actions/setup-node@v2-beta
+      with: 
+        node-version: 12
+    - name: Install Surge
+      run: npm install -g surge
+    - name: Run Surge
+      run: surge ./ bootcampnewapp1.surge.sh --token ${{ secrets.TOKEN_SURGE }}
